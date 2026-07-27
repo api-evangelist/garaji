@@ -1,7 +1,25 @@
 aid: garaji
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/garaji.png
 name: Garaji
-description: Garaji is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Garaji was an online auto-services marketplace based in Dubai, United Arab Emirates,
+  founded in 2018, that connected car owners with local workshops for routine maintenance and
+  repairs. Customers selected a service and a vetted garage, and a Garaji valet or tow truck
+  collected the vehicle, delivered it to the workshop, and returned it once work was complete.
+  Garaji was a 500 Global (formerly 500 Startups) portfolio company. The company is permanently
+  closed, and its domain garaji.com is now a parked, for-sale listing served via GoDaddy/Afternic
+  with no live product or developer surface. This profile is retained as a defunct portfolio-lead
+  record; there are no APIs or developer artifacts to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/garaji/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,22 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence: 'Crunchbase: permanently closed; garaji.com nameservers ns1/ns2.afternic.com,
+  /lander redirects to forsale.godaddy.com (parked/for-sale domain) as probed 2026-07-19'
+x-enrichment-outcome: 'no-api-surface: domain parked/for-sale, company closed; no artifacts produced (no fabrication)'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Automotive
+- Marketplace
+- Auto Repair
+- Vehicle Maintenance
+- Mobility
+- United Arab Emirates
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,8 @@ maintainers:
 common:
 - type: Website
   url: https://garaji.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
