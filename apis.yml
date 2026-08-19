@@ -31,7 +31,7 @@ x-status: defunct
 x-status-evidence: 'Crunchbase: permanently closed; garaji.com nameservers ns1/ns2.afternic.com,
   /lander redirects to forsale.godaddy.com (parked/for-sale domain) as probed 2026-07-19'
 x-enrichment-outcome: 'no-api-surface: domain parked/for-sale, company closed; no artifacts produced (no fabrication)'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
